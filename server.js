@@ -10,7 +10,7 @@ const NGROK_URL = 'https://4bda-195-235-93-3.ngrok-free.app';
 // Proxy GET /api/platform/getAllHguProvision
 app.get('/api/platform/hguProvision', async (req, res) => {
 	try {
-		const response = await fetch(`${NGROK_URL}/api/platform/getAllHguProvision`);
+		const response = await fetch(`${NGROK_URL}/api/platform/hguProvision`);
 		const data = await response.json();
 		res.status(response.status).json(data);
 	} catch (error) {
